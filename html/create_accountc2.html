@@ -1,0 +1,91 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="../css/forms.css">
+        <script src="../js/create_account2.js"></script>
+        <title>Create Account</title>
+    </head>
+    <body>
+        <div class="toplogin">
+            Already a member? <a href="login.html" class="link">Log In</a>
+        </div>
+        <img src="../img/cart.png" class="logo"><br><br>
+        <div class="center_form">
+            <div>
+                <form action="" method="POST">
+                    <fieldset>
+                        <legend>Customer</legend>
+                        <div class="formtop">
+                            Welcome<span id="username">[username]!</span><br>
+                        </div>
+                        <h4>Enter Payment Details</h4>
+                        <fieldset>
+                            <div>
+                                <input type="radio" id="paymenttype1" name="paymenttype" value="Credit/Debit card" onclick='enableCardDetails()''>
+                                <label for="Credit/Debit card">Credit/Debit card</label><br>
+                                <fieldset id="carddetails" disabled style="border: none;">
+                                    <input type="radio" id="visa" name="cardtype" value="visa">
+                                    <label for="visa">VISA</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+
+                                    <input type="radio" id="master" name="cardtype" value="master">
+                                    <label for="master">MASTER</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                                    <input type="radio" id="american_express" name="cardtype" value="american_express">
+                                    <label for="american_express">American Express</label><br>
+
+                                    <label for="cardno">Card Number :</label><br>
+                                    <input type="text" id="cardno" name="cardno" size="48" pattern="[0-9].{15,}" Required><br>
+                                
+                                    <label for="cardno">Card Expire Date :</label>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <label for="cvv">CVV :</label>
+                                    <br>
+                                    <input type="text" placeholder="MM" id="expMonth" name="expMonth" size="2" pattern="[0-9].{1,2}" Required>
+                                    <input type="text" placeholder="YY" id="expYear" name="expYear" size="2" pattern="[0-9].{1,2}" Required>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input type="password" placeholder="CVV" id="cvv" name="cvv" size="3" pattern="[0-9].{2}" Required><br><br>
+                                </fieldset>
+                            </div>
+                        </fieldset>
+                        <h3 class="center">--OR--</h3>
+                        <fieldset>
+                            <div>
+                                <input type="radio" id="paymenttype2" name="paymenttype" value="Paypal" onclick='enablePaypal()'>
+                                <label for="paypal">Paypal</label><br>
+                                <div>
+                                    <label for="paypal">Enter Paypal Email address :</label><br>
+                                    <input type ="email" id="paypalemail" name="paypalemail" pattern="[a-z 0-9 +-_%]+@+[a-z 0-9 +-_%]+\.[a-z]{2,3}" 
+                                    size="48" disabled Required><br><br>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <input type="checkbox" id="agreepd" name="agreepd" value="agree" onclick='enableButton()'>
+                        <label for="agreeshipping">By clicking, I agree that the Payment details are correct</label><br><br>
+
+                        <div class="center">
+                            <button type="submit" id="submitpd" class="greenbtn btn" disabled>submit</button>
+                        </div>  
+                    </fieldset>
+                </form>
+            </div>
+        </div><br>
+        <div class="bottomBar">
+            <div class="footer">
+                <br><br>
+                <a href="report.html">Report</a>&nbsp;|&nbsp;
+                <a href="faq.html">FAQ</a>&nbsp;|&nbsp;
+                <a href="contact.html">Contact Us</a>&nbsp;|&nbsp;
+                <a href="privacy.html">Privacy Policy</a>&nbsp;|&nbsp;
+                <a href="help.html">Help</a>&nbsp;|&nbsp;
+                <a href="abput.html">About</a>
+                <div>
+                    <br>
+                    <img src="../img/facebook.png" height="50px" width="50px">&nbsp;&nbsp;&nbsp;&nbsp;
+                    <img src="../img/twitter.png" height="50px" width="50px">&nbsp;&nbsp;&nbsp;&nbsp;
+                    <img src="../img/insta.png" height="50px" width="50px">&nbsp;&nbsp;&nbsp;&nbsp;
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

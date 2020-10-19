@@ -1,0 +1,31 @@
+.main{
+    padding-right: 500px;
+    padding-left: 500px;
+}
+.searchBar{
+    display:grid;
+    grid-template-rows: 60px 60px 60px;
+}
+.searchBarRow{
+    display:grid;
+    grid-template-columns: 600px auto;
+}
+.bottomBar{
+    background-color: #4885ED;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+}
+.border{
+    border-style: dashed;
+}
+.form{
+    border:1px solid;
+    width: fit-content;
+}
+#banuser{
+    color: white;
+    background-color: rgb(223, 60, 60);
+    border:none;
+    font-size: 20px;
+}

@@ -1,0 +1,33 @@
+
+
+form{
+	width:500px;
+	margin:auto;
+	background-color:lightblue;
+	padding:20px;
+	font-size:14px;
+	color:white;
+	font-family:verdana;
+	width:500px;
+	height:600px;
+}
+
+input [type =date]{
+     width:200px;
+	 height:25px;
+}
+input [type = text]{
+		width:100px;
+		height:50px;
+}
+
+input [type = email]{
+
+	width:200px;
+	height:50px;
+	
+
+
+
+
+}

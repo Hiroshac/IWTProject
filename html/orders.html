@@ -1,0 +1,107 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>Orders</title>
+        <link rel="stylesheet" type="text/css" href="../css/main.css">
+        <link rel="stylesheet" type="text/css" href="../css/signedInUser.css">
+        <link rel="stylesheet" type="text/css" href="../css/customer.css">  
+    </head>
+    <body>
+        <div class="topBar">
+            <div class="logo">
+                <img src="../img/cart.png" height="100" width="100">
+            </div>
+            <div class="searchBar">
+                <div></div>
+                <div class="searchBarRow">
+                    <div style="text-align: center;">
+                        <input style="height:40px;" type="text" size="150">
+                    </div>
+                    <div>
+                        <button class="searchButton"><img src="../img/search.png" height="30" width="30"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="welcome">
+                <span style="font-weight: bolder;font-size: 20px;">Welcome Back,</span><br>
+                <span id="username">[username]</span><br><br>
+                <button>My Account</button>&nbsp;&nbsp;
+                <button>SignOut</button>
+            </div>
+        </div>
+        <br><br>
+        <div class="main">
+            <h1>Purchased Items</h1>
+            <div class="left">
+                <form action="" method="POST">
+                    <fieldset>
+                        <fieldset><!--for this fieldset the data obtained from the database.For now this function does not work correctly-->
+                            <div>
+                                <label for="item no">Item No:</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <input type="text box" name="item no">
+
+                                <div class="fright">
+                                    <button type="submit" id="cancel_order" onclick='notAvailableAlert()'>Cancel Order</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="item name">Item name:</label>
+                                <input type="text box" name="Item name">&nbsp;&nbsp;&nbsp;&nbsp;
+
+                                <div class="fright">
+                                    <button type="submit" class="open_dispute" onclick='notAvailableAlert()'>Open Dispute</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                </div>
+                            </div>
+                            <br><br>
+
+                            <label for="feedback">Feedback:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;
+
+                            <label for="sfeedback">Seller Feedback:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                            <label for="dfeedback">Deliver Feedback:</label><br>
+
+                            <textarea name="ifeed" cols="49" rows="8"></textarea>
+                            <textarea name="sfeedback" cols="50" rows="8"> </textarea>
+                            <textarea name="dfeedback" cols="49" rows="8"> </textarea><br><br> 
+
+                            <div>
+                                <button type="submit" id="submit_feedback">Submit</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            </div>
+                        </fieldset>
+                    </fieldset>
+                </form><br>
+            </div>
+        </div>
+        <div class="bottomBar">
+            <div class="footer">
+                <br><br>
+                <a href="report.html">Report</a>&nbsp;|&nbsp;
+                <a href="faq.html">FAQ</a>&nbsp;|&nbsp;
+                <a href="contact.html">Contact Us</a>&nbsp;|&nbsp;
+                <a href="privacy.html">Privacy Policy</a>&nbsp;|&nbsp;
+                <a href="help.html">Help</a>&nbsp;|&nbsp;
+                <a href="abput.html">About</a>
+                <div>
+                    <br>
+                    <img src="../img/facebook.png" height="50px" width="50px">&nbsp;&nbsp;&nbsp;&nbsp;
+                    <img src="../img/twitter.png" height="50px" width="50px">&nbsp;&nbsp;&nbsp;&nbsp;
+                    <img src="../img/insta.png" height="50px" width="50px">&nbsp;&nbsp;&nbsp;&nbsp;
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+    function notAvailableAlert()
+        {
+            alert("This function is not available right now");
+        }
+    </script>
+</html>

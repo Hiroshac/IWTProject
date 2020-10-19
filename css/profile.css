@@ -1,0 +1,45 @@
+.left
+{
+    text-align: left;
+}
+.right
+{
+    text-align: right;
+}
+.fright
+{
+    float:right;
+}
+.welcome
+{
+    align-items: center;
+    align-content: center; 
+    text-align: center;
+    padding-top: 35px;
+}
+.cover
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 300px;
+    right: 920px;
+    width:950px ;
+}
+.propic
+{
+    position: absolute;
+    top: 245px;
+    left: 550px;
+}
+#up_pro_pic
+{
+    border-radius: 4px;
+    position: absolute;
+    top: 455px;
+    left:722px;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    cursor:pointer;
+    overflow: hidden;
+}

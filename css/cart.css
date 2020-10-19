@@ -1,0 +1,45 @@
+#summery{
+    border-left: 1px solid;
+    float: right;
+}
+#cart{
+    display: grid;
+    grid-template-columns: auto 300px;
+}
+#item{
+    display: grid;
+    grid-template-columns: 100px auto;
+}
+.searchButton{
+    background: none;
+    border:none;
+    height: 40px;
+}
+a{
+    color:#000;
+    text-decoration: none;
+}
+.main{
+    padding-right: 150px;
+    padding-left: 150px;
+}
+.topBar{
+    display: grid;
+    background-color: #4885ED;
+    height: 180px;
+    width: 100%;
+    grid-template-columns: 300px auto 250px;
+}
+.searchBar{
+    display:grid;
+    grid-template-rows: 60px 60px 60px;
+}
+.searchBarRow{
+    display:grid;
+    grid-template-columns: 830px auto;
+}
+.bottomBar{
+    background-color: #4885ED;
+    height: 140px;
+    width: 100%;
+}

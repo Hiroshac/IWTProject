@@ -1,0 +1,73 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="../css/forms.css">
+        <script src="../js/create_account1.js"></script>
+        <title>Create Account</title>
+    </head>
+    <body>
+        <div class="toplogin">
+            Already a member? <a href="login.html" class="link">Log In</a>
+        </div>
+        <img src="../img/cart.png" class="logo"><br><br>
+        <div class="center_form">
+            <div>
+                <form action="" method="POST">
+                    <fieldset>
+                        <legend>Customer</legend>
+                        <div class="formtop">
+                            Welcome<span id="username">[username]!</span><br>
+                        </div>
+                        <h4>Enter Shipping Details</h4>    
+                        <div>
+                            <label for="address1">Address Line 1 :</label><br>
+                            <input type="text" id="address1" name="address1" size="48" Required><br><br>
+
+                            <label for="address2">Address Line 2(optional) :</label><br>
+                            <input type="text" id="address2" name="address2" size="48"><br><br>
+
+                            <label for="city">City :</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <label for="pc">Postal Code :</label><br>
+                            <input type="text" id="city" name="city" size="20" Required>
+                            <input type="text" id="pc" name="pc" size="20" Required><br><br>
+
+                            <label for="State">State/Province :</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <label for="pc">Country :</label><br>
+                            <input type="text" id="state" name="state" size="20" Required>
+                            <input type="text" id="country" name="country" size="20" Required><br><br>
+
+                            <label for="telno">Telephone :</label><br>
+                            <input type ="tel" id="telno" name="telno" pattern="[0-9]{11}" size="48"placeholder="94712345678" Required><br><br>
+
+                            <input type="checkbox" id="agreesd" name="agreesd" value="agree" onclick='enableButton()'>
+                            <label for="agreeshipping">By clicking,I agree that the Shipping details are correct.</label><br><br>
+                        </div>
+                        <div class="center">
+                            <button type="submit" id="submitc1" class="greenbtn btn" disabled>next</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div><br>
+        <div class="bottomBar">
+            <div class="footer">
+                <br><br>
+                <a href="report.html">Report</a>&nbsp;|&nbsp;
+                <a href="faq.html">FAQ</a>&nbsp;|&nbsp;
+                <a href="contact.html">Contact Us</a>&nbsp;|&nbsp;
+                <a href="privacy.html">Privacy Policy</a>&nbsp;|&nbsp;
+                <a href="help.html">Help</a>&nbsp;|&nbsp;
+                <a href="abput.html">About</a>
+                <div>
+                    <br>
+                    <img src="../img/facebook.png" height="50px" width="50px">&nbsp;&nbsp;&nbsp;&nbsp;
+                    <img src="../img/twitter.png" height="50px" width="50px">&nbsp;&nbsp;&nbsp;&nbsp;
+                    <img src="../img/insta.png" height="50px" width="50px">&nbsp;&nbsp;&nbsp;&nbsp;
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

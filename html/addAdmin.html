@@ -1,0 +1,108 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="../css/main.css">
+        <link rel="stylesheet" type="text/css" href="../css/forms.css">
+        <style>
+            .link{
+                color:#000;
+                text-decoration: none;
+            }
+            .main{
+                text-align: center;
+                display: grid;
+                grid-template-columns: 450px auto 450px;
+            }
+            .topBar{
+                display: grid;
+                background-color: #4885ED;
+                height: 180px;
+                width: 100%;
+                grid-template-columns: 300px auto;
+            }
+            .searchBar{
+                display:grid;
+                grid-template-rows: 60px 60px 60px;
+            }
+            .searchBarRow{
+                display:grid;
+                grid-template-columns: 600px auto;
+            }
+            .bottomBar{
+                background-color: #4885ED;
+                height: 140px;
+                width: 100%;
+            }
+            .border{
+                border-style: dashed;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <div style="float:right;padding-right: 300px;">
+                <a href="./home.html"><img src="../img/cart.png" height="150" width="150"></a>
+            </div>
+            <div>
+                <form method="post" action="../php/addAdmin.php"onsubmit="return checkPassword()">
+                    <fieldset>
+                        <legend style="text-align: center;">Admin Registration</legend>
+                        <div style="text-align:left;">
+
+                            <label for="fname">First Name :</label><br>
+                            <input type="text" id="fname" name="fname" size="48" Required><br><br>
+
+                            <label for="lname">Last Name :</label><br>
+                            <input type="text" id="lname" name="lname" size="48"><br><br>
+
+                            <label for="email">Email :</label><br>
+                            <input type="email" id="email" name="email" size="48" Required><br><br>
+                            <!-- pattern="[a-z 0-9 +-_%]+@+[a-z 0-9 +-_%]+.[a-z]{2,3}"  -->
+                            
+                            <label for="nic">NIC :</label><br>
+                            <input type ="text" id="nic" name="nic" size="48"  Required><br><br>
+                            <!-- pattern="[0-9,vV].{10}" -->
+
+                            <label for="pw">Password :</label><br>
+                            <input type="password" id="pwd" name="pwd" size="48" 
+                            title="Must contain at least one  number and one uppercase and lowercase letter, and at least 6 or more characters"><br><br>
+                            <!-- pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" -->
+
+                            <label for="rpw">Re-enter Password :</label><br>
+                            <input type="password" id="rpwd" name="rpwd" size="48"  title="Six or more characters" ><br><br>
+                            <!-- pattern=".{6,}" -->
+                            
+                        </div>
+                        <input type="checkbox" id="agreeterms" name="agreeterms" onclick=""><!--enableButon()-->
+                            <label for="agreeterms">By clicking, I agree to the Terms of Use and have read the Privacy Statement</label><br><br>
+                        <div class="center">    
+                            <button type="submit" id="submita" class="greenbtn btn">register as a admin</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <div style="float:left;padding-left: 300px;">
+                Already a member? <a style="color:red" href="./login.html">Log In</a>
+            </div>
+        </div>
+        <div>
+            <div class="bottomBar">
+                <div style="text-align: center;justify-content: center;align-content: center;align-items: center;">
+                    <br><br>
+                    <a class="link" href="report.html">Report</a>&nbsp;|&nbsp;
+                    <a class="link" href="faq.html">FAQ</a>&nbsp;|&nbsp;
+                    <a class="link" href="contact.html">Contact Us</a>&nbsp;|&nbsp;
+                    <a class="link" href="privacy.html">Privacy Policy</a>&nbsp;|&nbsp;
+                    <a class="link" href="help.html">Help</a>&nbsp;|&nbsp;
+                    <a class="link" href="about.html">About</a>
+                    <div>
+                        <br>
+                        <img src="../img/facebook.png" height="50px" width="50px">&nbsp;&nbsp;&nbsp;&nbsp;
+                        <img src="../img/twitter.png" height="50px" width="50px">&nbsp;&nbsp;&nbsp;&nbsp;
+                        <img src="../img/insta.png" height="50px" width="50px">&nbsp;&nbsp;&nbsp;&nbsp;
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <!--<script src="../js/addAdmin.js"></script>-->
+</html>

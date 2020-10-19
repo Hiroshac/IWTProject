@@ -1,0 +1,111 @@
+body {
+    background-image: url('../img/bg1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Segoe UI';
+}
+
+a{
+    color:#000;
+    text-decoration: none;
+}
+
+.footer{
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.bottomBar{
+    background-color: #4885ED;
+    height: 140px;
+    width: 100%;
+}
+
+.toplogin
+{
+    float:right;
+}   
+
+/*form*/
+fieldset {
+    background-color: #fff;
+}
+legend {
+    background-color: gray;
+    color: white;
+}
+input {
+    margin: 5px;
+}
+.center_form{
+    padding-left: 550px; 
+    padding-right: 550px;
+
+}
+.formtop
+{
+    text-align:center;
+    font-weight: bolder;
+    font-size: 20px;
+}
+.center
+{
+    text-align:center;
+}
+
+/*buttons*/
+.greenbtn{
+    background-color: #46d676;
+}
+.bluebtn{
+    background-color: #4678d6;
+}
+.greenbtn:hover 
+{
+    background-color: #319b69;
+}
+.bluebtn:hover 
+{
+    background-color: #385894;
+}
+.btn
+{
+    border-radius: 4px;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.btn:active 
+{
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+/*links
+.link:link {
+    color: blue;
+}
+.link:visited {
+    color: darkblue;
+}
+.link:hover {
+    color: red;
+}
+.link:active {
+    color: blueviolet;
+} */
+
+.logo{
+    padding-left: 20px;
+    padding-top:30px;
+    width:100px;
+    height:100px;
+}

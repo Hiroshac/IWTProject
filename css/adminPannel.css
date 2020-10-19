@@ -1,0 +1,12 @@
+.topButtons{
+    border:none;
+    background-color: black;
+    color: white;
+    height: 25px;
+}
+.bottomBar{
+    background-color: #4885ED;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+}

@@ -1,0 +1,111 @@
+<html>
+    <head>
+        <!-- <style>
+            a{
+                color:#000;
+                text-decoration: none;
+            }
+            .main{
+                text-align: center;
+            }
+            .topBar{
+                display: grid;
+                background-color: #4885ED;
+                height: 180px;
+                width: 100%;
+                grid-template-columns: 300px auto;
+            }
+            .searchBar{
+                display:grid;
+                grid-template-rows: 60px 60px 60px;
+            }
+            .searchBarRow{
+                display:grid;
+                grid-template-columns: 600px auto;
+            }
+            .bottomBar{
+                background-color: #4885ED;
+                height: 140px;
+                width: 100%;
+            }
+            .border{
+                border-style: dashed;
+            }
+        </style> -->
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../css/signedInUser.css">
+    </head>
+    <body>
+        <div class="topBar">
+            <div style="padding-left: 20px;padding-top:30px;">
+                <a href="./home.html"><img src="../img/cart.png" height="100" width="100"></a>
+            </div>
+            <div class="searchBar">
+                <div></div>
+                <div class="searchBarRow" style="text-align: center;align-items: center;">
+                    <div style="text-align: center;">
+                        <input style="height:40px;" type="text" size="150">
+                    </div>
+                    <div>
+                        <button class="searchButton"><img src="../img/search.png" height="30" width="30"></button>
+                    </div>
+                </div>
+                <div></div>
+            </div>
+            <div style="align-items: center;align-content: center; text-align: center;padding-top: 35px;">
+                <span style="font-weight: bolder;font-size: 20px;">Welcome Back,</span><br>
+                <span id="username">[username]</span><br><br>
+                <a href="./account.html"><button>My Account</button></a>&nbsp;&nbsp;
+                <button onclick="">SignOut</button>
+            </div>
+        </div>
+        <div id="main" class="main">
+            <!-- <h1>Complaint1</h1>
+            <h2>User ID:</h2><h2>Item No:</h2>
+            <h2>Complaint:</h2>
+            <p>______________________________________________________________________________________________________</p>
+            <p>______________________________________________________________________________________________________</p>
+            <p>______________________________________________________________________________________________________</p>
+            <p>______________________________________________________________________________________________________</p>
+ 
+            <hr>
+            <h1>Complaint2</h1>
+            <h2>User ID:</h2> <h2>Item No:</h2>
+            <h2>Complaint:</h2>
+            <p>______________________________________________________________________________________________________</p>
+            <p>______________________________________________________________________________________________________</p>
+            <p>______________________________________________________________________________________________________</p>
+            <p>______________________________________________________________________________________________________</p>
+ 
+            <hr>
+            <h1>Complaint3</h1>
+            <h2>User ID:</h2> <h2>Item No:</h2>
+            <h2>Complaint:</h2>
+            <p>______________________________________________________________________________________________________</p>
+            <p>______________________________________________________________________________________________________</p>
+            <p>______________________________________________________________________________________________________</p>
+            <p>______________________________________________________________________________________________________</p>
+ 
+            <hr>
+  -->
+         </div>
+        <div class="bottomBar">
+            <div style="text-align: center;justify-content: center;align-content: center;align-items: center;">
+                <br><br>
+                <a class="link" href="report.html">Report</a>&nbsp;|&nbsp;
+                <a class="link" href="faq.html">FAQ</a>&nbsp;|&nbsp;
+                <a class="link" href="contact.html">Contact Us</a>&nbsp;|&nbsp;
+                <a class="link" href="privacy.html">Privacy Policy</a>&nbsp;|&nbsp;
+                <a class="link" href="help.html">Help</a>&nbsp;|&nbsp;
+                <a class="link" href="about.html">About</a>
+                <div>
+                    <br>
+                    <img src="../img/facebook.png" height="50px" width="50px">&nbsp;&nbsp;&nbsp;&nbsp;
+                    <img src="../img/twitter.png" height="50px" width="50px">&nbsp;&nbsp;&nbsp;&nbsp;
+                    <img src="../img/insta.png" height="50px" width="50px">&nbsp;&nbsp;&nbsp;&nbsp;
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="../js/setDummyData.js"></script>
+</html>
