@@ -1,8 +1,6 @@
 # IWTProject
 
-1. Download Git Bash and install
-
-https://git-scm.com/downloads
+1. Download Git Bash and install - https://git-scm.com/downloads
 
 2. Fork the repo
 
@@ -39,3 +37,4 @@ git commit -m "Expalin the work you did"
 ```bash 
 git push 
 ```
+## Pick a task from here - https://github.com/GeethOnion/IWTProject/projects/1
