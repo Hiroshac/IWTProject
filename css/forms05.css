@@ -1,0 +1,119 @@
+body {
+    background-image: url('../img/bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Segoe UI';
+}
+
+a{
+    color:#000;
+    text-decoration: none;
+}
+
+.footer{
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.bottomBar{
+    background-color: #4885ED;
+    height: 140px;
+    width: 100%;
+}
+
+.toplogin
+{
+    float:right;
+}
+
+/*form*/
+fieldset {
+    background-color: #eeeeee75;
+    border-radius: 10px;
+}
+legend {
+    background-color: gray;
+    color: white;
+}
+input {
+    margin: 5px;
+    border-radius: 5px;
+}
+.center_form{
+    padding-left: 550px; 
+    padding-right: 550px;
+
+}
+.formtop
+{
+    text-align:center;
+    font-weight: bolder;
+    font-size: 20px;
+}
+.center
+{
+    text-align:center;
+}
+
+/*buttons*/
+.greenbtn{
+    background-color: #05aa05c0;
+}
+.bluebtn{
+    background-color: #0000ffc0;
+}
+.greenbtn:hover 
+{
+    background-color: #008000ff;
+}
+.bluebtn:hover 
+{
+    background-color: #0026ff;
+}
+.btn
+{
+    border-radius: 4px;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.greenbtn:active 
+{
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666666;
+  transform: translateY(4px);
+}
+.bluebtn:active 
+{
+  background-color: #0000ff;
+  box-shadow: 0 5px #666666;
+  transform: translateY(4px);/*for a 2d look*/
+}
+
+/*links*/
+.link:link {
+    color: blue;
+}
+.link:visited {
+    color: darkblue;
+}
+.link:hover {
+    color: red;
+}
+.link:active {
+    color: blueviolet;
+} 
+
+.logo{
+    padding-left: 20px;
+    padding-top:30px;
+    width:100px;
+    height:100px;
+}

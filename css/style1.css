@@ -1,0 +1,48 @@
+.buttons{
+    background: none;
+    border:none;
+    height: 40px;
+}
+a{
+    color:#000;
+    text-decoration: none;
+}
+.main{
+    padding-right: 150px;
+    padding-left: 150px;
+}
+.topBar{
+    background-color: #4885ED;
+    height: 140px;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20x;
+}
+.bottomBar{
+    background-color: #4885ED;
+    height: 140px;
+    width: 100%;
+    margin-top: 250px;
+}
+.person{
+    text-shadow: 2px 2px 10px #000000;
+    width:fit-content;
+    text-align: center;
+    display: inline-block;
+}
+.question{
+    width:100%;
+    background:#c4c4c4
+}
+.table{
+    border:1px solid; 
+    text-align : Center; 
+    width:80%;
+    height: 50%;   
+}
+.submitc{
+    float:center;
+}
+.bcenter{
+    float:center;
+}
