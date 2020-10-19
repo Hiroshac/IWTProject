@@ -28,8 +28,14 @@ git pull upstream master
 
 ### Instructions to upload your work
 
-1. ```bash git add . ```
+```bash 
+git add . 
+```
 
-2. ```bash git commit -m "Expalin the work you did" ```
+```bash 
+git commit -m "Expalin the work you did" 
+```
 
-3. ```bash git push ```
+```bash 
+git push 
+```
