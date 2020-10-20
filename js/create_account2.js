@@ -7,7 +7,7 @@ function enableButton(){
 	}
 }
 
-function enableCardDetails(){
+/*function enableCardDetails(){
 	document.getElementById("carddetails").disabled=false;
 	document.getElementById("paypalemail").disabled=true;
 }
@@ -15,4 +15,4 @@ function enableCardDetails(){
 function enablePaypal(){
 	document.getElementById("paypalemail").disabled=false;
 	document.getElementById("carddetails").disabled=true;
-}
+}*/
