@@ -15,7 +15,7 @@
 1. Add upstream for the updating the files
 
 ```bash
-git add remote upstream https://github.com/GeethOnion/IWTProject.git
+git remote add upstream https://github.com/GeethOnion/IWTProject.git
 ```
 
 2. Get the latest updated files from original repo
