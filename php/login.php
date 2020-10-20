@@ -7,8 +7,6 @@
     $email = $_POST['email'];
     $pwd=$_POST['password'];
 
-    //$pass = crypt($passwoord, '$2a$07$YourSaltIsA22ChrString$');
-
     // Create connection
     $conn = new mysqli($servername, $user, $password, $dbname);
     // Check connection
@@ -21,9 +19,9 @@
     while($row = mysqli_fetch_array($result)) {
         if($row['Password']==$pwd){
             if($row['Type']=='admin'){
-                header('Location: ../html/adminpanel.html');
                 session_start();
-                $_SESSION['email']=$row['Email'];
+                $_SESSION['username']=$row['User_name'];
+                header('Location: ../html/home.php');
             }
             if($row['Type']=='Seller'){
                 header('Location: ../html/seller.html');
@@ -34,11 +32,6 @@
         }
     }
     $conn->close();
-
-
-    // session_start();
-            // $_SESSION['userrr']=$row['Username'];
-            // $_SESSION['email']=$row['Email'];
 ?>
 
 

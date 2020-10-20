@@ -41,7 +41,7 @@ if(window.location.pathname=="/html/cart.html"){
     }
 }
 
-if(window.location.pathname=="/html/adminPanel.html"){
+if(window.location.pathname=="/iwt/html/adminpanel.html"){
     var noOfRows=3;
     for(i=1;i<=noOfRows;i++){
         document.getElementById("table").innerHTML+=`<tr>

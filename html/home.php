@@ -1,19 +1,14 @@
 <?php
     session_start();
-    $_SESSION['id'] = "green";
-?>
+?> 
 <html>
     <head>
         <link rel="stylesheet" href="../css/main.css">
         <link rel="stylesheet" href="../css/home.css">
+        <link rel="stylesheet" href="../css/signedInUser.css">
         <link rel="stylesheet" href="../css/slideshow.css">
     </head>
     
-    <script type="text/javascript">
-        var idr = '<?php echo $_SESSION["id"] ?>';
-        console.log(idr);
-    </script>
-
     <body>
         <div class="topBar">
             <div style="padding-left: 20px;padding-top:30px;">
@@ -23,16 +18,25 @@
                 <div></div>
                 <div class="searchBarRow" style="text-align: center;align-items: center;">
                     <div style="text-align: center;">
-                        <input style="height:40px;" type="text" size="150" placeholder="Search">
+                        <input style="height:40px;" type="text" size="150">
                     </div>
                     <div>
                         <button class="searchButton"><img src="../img/search.png" height="30" width="30"></button>
                     </div>
                 </div>
-            </div>
-            <div style="align-items: center;align-content: center; text-align: center;" class="searchBar" id="loginButtonContainer">
                 <div></div>
-                <div><a href="./Login.html"><button>Login</button></a></div>
+            </div>
+            <div id="logOutButtonContainer" style="align-items: center;align-content: center; text-align: center;padding-top: 35px;display:none;">
+                <span style="font-weight: bolder;font-size: 20px;">Welcome Back,</span><br>
+                <span id="username">[username]</span><br><br>
+                <a href="./account.html"><button>My Account</button></a>&nbsp;&nbsp;
+                <button onclick="">SignOut</button>
+            </div>
+            <div id="loginButtonContainer" class="searchBar" style="align-items: center;align-content: center; text-align: center;padding-top: 35px;">
+                <div></div>
+                <div>
+                    <a href="./login.html"><button>Login</button></a>
+                </div>
                 <div></div>
             </div>
         </div>
@@ -150,5 +154,16 @@
             </div>
         </div>
     </body>
+    <script type="text/javascript">
+        var idr = '<?php echo isset($_SESSION['username']); ?>'; 
+        var uname = '<?php echo $_SESSION['username']; ?>'; 
+        console.log(idr);
+         if(idr==1){
+             document.getElementById("logOutButtonContainer").style.display="block";
+             document.getElementById("username").innerHTML=uname;
+             document.getElementById("loginButtonContainer").style.display="none";
+         }
+    </script>
+
     <script src="../js/slideshow.js"></script>
 </html>
