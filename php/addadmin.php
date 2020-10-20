@@ -7,6 +7,8 @@
     $fname = $_POST['fname'];
     $lname =$_POST['lname'];
     $nic = $_POST['nic'];
+    $email = $_POST['email'];
+    $number = $_POST['number'];
     $pw=$_POST['pwd'];
 
 
@@ -17,7 +19,7 @@
         die("Connection failed: " . $conn->connect_error);
     }
 
-    $sql = "INSERT INTO admins (id,fname,lname, nic,password) values('','$fname','$lname','$nic','$pw')";
+    $sql = "INSERT INTO staff (Staff_ID,User_name,NIC,Email,Phone_number,Password,Type) VALUES ('','$lname $fname','$nic','$email',$number,'$pw','admin')";
     $result = $conn->query($sql);
     echo ("Added");
     $conn->close();

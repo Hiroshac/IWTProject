@@ -1,9 +1,19 @@
+<?php
+    session_start();
+    $_SESSION['id'] = "green";
+?>
 <html>
     <head>
         <link rel="stylesheet" href="../css/main.css">
         <link rel="stylesheet" href="../css/home.css">
         <link rel="stylesheet" href="../css/slideshow.css">
     </head>
+    
+    <script type="text/javascript">
+        var idr = '<?php echo $_SESSION["id"] ?>';
+        console.log(idr);
+    </script>
+
     <body>
         <div class="topBar">
             <div style="padding-left: 20px;padding-top:30px;">
@@ -20,7 +30,11 @@
                     </div>
                 </div>
             </div>
-            <div style="align-items: center;align-content: center; text-align: center;padding-top: 35px;"></div>
+            <div style="align-items: center;align-content: center; text-align: center;" class="searchBar" id="loginButtonContainer">
+                <div></div>
+                <div><a href="./Login.html"><button>Login</button></a></div>
+                <div></div>
+            </div>
         </div>
         <div class="main">
             <br>
